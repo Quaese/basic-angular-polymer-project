@@ -1,0 +1,20 @@
+    <!-- START: views/base.tmpl.html -->
+    <header class="{{templates.head.class}}">
+        <div class="container" ng-include="templates.header.url"></div>
+    </header>
+
+    <section class="top-divider {{templates.topdivider.class}}">
+        <div class="container" ng-include="templates.topdivider.url"></div>
+    </section>
+
+    <section class="content-wrapper {{templates.content.class}}">
+        <div class="container" ng-include="templates.content.url"></div>
+        <div class="scroll-to-top" ng-include="templates.scrolltotop.url"></div>
+    </section>
+
+    <footer class="footer-wrapper {{templates.footer.class}}">
+        <div class="dashed-border">
+            <div class="container" ng-include="templates.footer.url"></div>
+        </div>
+    </footer>
+    <!-- END: views/base.tmpl.html -->

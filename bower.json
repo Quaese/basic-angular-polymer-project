@@ -1,0 +1,30 @@
+{
+  "name": "polymer-tests",
+  "authors": [
+    "Quaese <quaese@gmx.net>"
+  ],
+  "description": "Initial Polymer-Tests",
+  "main": "",
+  "moduleType": [],
+  "license": "MIT",
+  "homepage": "",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "polymer": "Polymer/polymer#1.2.0",
+    "jquery": "~1.11",
+    "angular": "angularjs#~1.4",
+    "angular-ui-router": "~0.2.15",
+    "angular-animate": "~1.4.8",
+    "angular-touch": "~1.4.8",
+    "angular-cookies": "~1.4.8",
+    "jquery.scrollTo": "~2.1.2",
+    "bootstrap": "~3.3.6",
+    "paper-button": "PolymerElements/paper-button#~1.0.11"
+  }
+}

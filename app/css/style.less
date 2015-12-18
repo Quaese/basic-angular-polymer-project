@@ -1,0 +1,211 @@
+@import url("https://fonts.googleapis.com/css?family=Fjalla+One");
+@import url("https://fonts.googleapis.com/css?family=Open+Sans:400,400italic");
+
+/* START - Variablen */
+@small_level: 800px;
+@sm_level: 768px;
+@mid_level: 991px;
+@large_level: 1200px;
+
+@font_header: 'Fjalla One', sans-serif;
+@font_text: 'Open Sans', sans-serif;
+
+body {
+    font-family: @font_text;
+}
+
+/* START - Header */
+header {
+    padding-top: 60px;
+}
+
+
+@media (max-width: @small_level) {
+    header {
+    }
+}
+/* ENDE  - Header */
+
+/* START - navbar */
+.navbar {
+}
+/* ENDE  - navbar */
+
+/* START - Divider mit Subnavigation */
+section {
+    &.top-divider {
+    }
+}
+
+@media (max-width: @small_level) {
+}
+/* ENDE  - Divider mit Subnavigation */
+
+/* START - Content-Bereich (allgemeine Formatierungen) */
+section {
+}
+/* ENDE  - Content-Bereich (allgemeine Formatierungen) */
+
+/* START - Layout-Elemente */
+.clear-both {
+    clear: both;
+}
+.overflow-auto {
+    overflow: auto;
+}
+.overflow-hidden {
+    overflow: hidden;
+}
+/* ENDE  - Layout-Elemente */
+
+/* START - Footer */
+footer {
+}
+/* ENDE  - Footer */
+
+/* START - Directive (scroll-to-top) */
+.scroll-to-top-button {
+    font-size: 21px;
+    cursor: pointer;
+}
+/* ENDE  - Directive (commonsearch) */
+
+/* START - Responsive-Anweisungen */
+.large-size {
+    display: block;
+}
+.mid-size {
+    display: none;
+}
+
+.large-size-hide {
+    display: none;
+}
+
+@media (max-width: @mid_level) {
+    .large-size {
+        display: none;
+    }
+    .mid-size {
+        display: block;
+    }
+
+    .large-size-hide {
+        display: block;
+    }
+}
+/* ENDE  - Responsive-Anweisungen */
+
+/* START - Formular */
+.fieldset-band-info {
+    ul {
+        list-style: none;
+        padding: 0 !important;
+
+        li {
+            margin: 2px 0;
+
+            label {
+                display: inline-block;
+                width: 15%;
+                margin-right: 10px;
+                text-align: right;
+            }
+
+            input, select {
+                &.form-control {
+                    width: 75%;
+                }
+            }
+
+            input {
+                &.form-control{
+                    margin: auto 5px;
+                }
+            }
+
+            select {
+                &.form-control{
+                    margin: auto 0px auto 2px;
+                }
+            }
+        }
+
+        @media (max-width: @mid_level) {
+            li {
+                margin: 2px 0 10px;
+
+                label {
+                    display: block;
+                    text-align: left;
+                }
+
+                input, select {
+                    &.form-control {
+                        width: 100%;
+                    }
+                }
+
+                input {
+                    &.form-control {
+                        margin: auto;
+                    }
+                }
+            }
+        }
+    }
+}
+
+.fieldset-tracklist {
+    ol {
+        li {
+            margin: 2px 0;
+
+            label {
+                display: inline-block;
+                margin-right: 10px;
+                width: 1%;
+            }
+
+            input, select {
+                &.form-control{
+                    &.title {
+                        // width: 200px;
+                        width: 75%;
+                    }
+                    &.duration {
+                        // width: 50px;
+                        width: 15%;
+                    }
+                }
+            }
+
+            input {
+                &.form-control{
+                    margin: auto 5px;
+                }
+            }
+
+            select {
+                &.form-control{
+                    margin: auto 0px auto 2px;
+                }
+            }
+        }
+    }
+
+    @media (max-width: @mid_level) {
+        ol {
+            padding: 0 0 0 20px;
+
+            li {
+                margin: 2px 0 10px;
+
+                input {
+                    display: inline-block;
+                }
+            }
+        }
+    }
+}
+/* ENDE  - Formular */

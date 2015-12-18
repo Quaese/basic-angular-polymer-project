@@ -1,0 +1,132 @@
+@import url("https://fonts.googleapis.com/css?family=Fjalla+One");
+@import url("https://fonts.googleapis.com/css?family=Open+Sans:400,400italic");
+/* START - Variablen */
+body {
+  font-family: 'Open Sans', sans-serif;
+}
+/* START - Header */
+header {
+  padding-top: 60px;
+}
+/* ENDE  - Header */
+/* START - navbar */
+/* ENDE  - navbar */
+/* START - Divider mit Subnavigation */
+/* ENDE  - Divider mit Subnavigation */
+/* START - Content-Bereich (allgemeine Formatierungen) */
+/* ENDE  - Content-Bereich (allgemeine Formatierungen) */
+/* START - Layout-Elemente */
+.clear-both {
+  clear: both;
+}
+.overflow-auto {
+  overflow: auto;
+}
+.overflow-hidden {
+  overflow: hidden;
+}
+/* ENDE  - Layout-Elemente */
+/* START - Footer */
+/* ENDE  - Footer */
+/* START - Directive (scroll-to-top) */
+.scroll-to-top-button {
+  font-size: 21px;
+  cursor: pointer;
+}
+/* ENDE  - Directive (commonsearch) */
+/* START - Responsive-Anweisungen */
+.large-size {
+  display: block;
+}
+.mid-size {
+  display: none;
+}
+.large-size-hide {
+  display: none;
+}
+@media (max-width: 991px) {
+  .large-size {
+    display: none;
+  }
+  .mid-size {
+    display: block;
+  }
+  .large-size-hide {
+    display: block;
+  }
+}
+/* ENDE  - Responsive-Anweisungen */
+/* START - Formular */
+.fieldset-band-info ul {
+  list-style: none;
+  padding: 0 !important;
+}
+.fieldset-band-info ul li {
+  margin: 2px 0;
+}
+.fieldset-band-info ul li label {
+  display: inline-block;
+  width: 15%;
+  margin-right: 10px;
+  text-align: right;
+}
+.fieldset-band-info ul li input.form-control,
+.fieldset-band-info ul li select.form-control {
+  width: 75%;
+}
+.fieldset-band-info ul li input.form-control {
+  margin: auto 5px;
+}
+.fieldset-band-info ul li select.form-control {
+  margin: auto 0px auto 2px;
+}
+@media (max-width: 991px) {
+  .fieldset-band-info ul li {
+    margin: 2px 0 10px;
+  }
+  .fieldset-band-info ul li label {
+    display: block;
+    text-align: left;
+  }
+  .fieldset-band-info ul li input.form-control,
+  .fieldset-band-info ul li select.form-control {
+    width: 100%;
+  }
+  .fieldset-band-info ul li input.form-control {
+    margin: auto;
+  }
+}
+.fieldset-tracklist ol li {
+  margin: 2px 0;
+}
+.fieldset-tracklist ol li label {
+  display: inline-block;
+  margin-right: 10px;
+  width: 1%;
+}
+.fieldset-tracklist ol li input.form-control.title,
+.fieldset-tracklist ol li select.form-control.title {
+  width: 75%;
+}
+.fieldset-tracklist ol li input.form-control.duration,
+.fieldset-tracklist ol li select.form-control.duration {
+  width: 15%;
+}
+.fieldset-tracklist ol li input.form-control {
+  margin: auto 5px;
+}
+.fieldset-tracklist ol li select.form-control {
+  margin: auto 0px auto 2px;
+}
+@media (max-width: 991px) {
+  .fieldset-tracklist ol {
+    padding: 0 0 0 20px;
+  }
+  .fieldset-tracklist ol li {
+    margin: 2px 0 10px;
+  }
+  .fieldset-tracklist ol li input {
+    display: inline-block;
+  }
+}
+/* ENDE  - Formular */
