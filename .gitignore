@@ -1,0 +1,7 @@
+# Can also ignore all directories and files in a directory.
+composer.*
+vendor/
+libs/
+node_modules/
+node_modules/**/*
+app/**/*.min.*
